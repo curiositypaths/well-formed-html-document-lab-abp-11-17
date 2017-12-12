@@ -24,7 +24,7 @@ RSpec.describe "Well-Formed HTML Document" do
 
         expect(title.name).to eq('title')
 
-        expect(html_file_contents).to include('</title>')
+        expect(html_file_contents).to match(/<\/title>/i)
       end
     end
   end
